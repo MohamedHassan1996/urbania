@@ -11,7 +11,7 @@
         Edit Ticket
     </a> --}}
 
-    <a href="{{ 'http://localhost:3015/sollecito?ticketId=' . $ticket->id . '&token=' . $ticket->email_token }}">
+    <a href="{{ 'https://urbania.testingelmo.com/sollecito?ticketId=' . $ticket->id . '&token=' . $ticket->email_token }}">
         Edit Ticket
     </a>
 </body>

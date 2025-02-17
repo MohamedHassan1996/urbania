@@ -63,7 +63,7 @@ class ClientOuterTicketController extends Controller
                 ], 200);
             }
 
-            $ticket->description = $ticket->description . ' || ' . $request->message;
+            $ticket->description = $ticket->description == ""? $request->message: $ticket->description." by client: ".$request->message;
 
             $ticket->status = 1;
 
